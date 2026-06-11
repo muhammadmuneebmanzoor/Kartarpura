@@ -1,0 +1,6 @@
+{
+  "name": "Kartarpura Street Food",
+  "description": "Experience Rawalpindi's most famous street food. Authentic Nihari, Halwa Puri, Karahi, and BBQ served 24 hours.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

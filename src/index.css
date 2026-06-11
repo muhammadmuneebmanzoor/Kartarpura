@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gold-500: #D4AF37;
+  --color-gold-600: #B5952F;
+  --color-orange-500: #F27D26;
+  --color-orange-600: #D96A19;
+  --color-dark-900: #080808;
+  --color-dark-800: #121212;
+  --color-dark-700: #1A1A1A;
+  
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-dark-900);
+    color: white;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Glassmorphism utility */
+.glass {
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, var(--color-orange-500), var(--color-gold-500));
+}
